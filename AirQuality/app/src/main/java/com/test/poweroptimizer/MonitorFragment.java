@@ -9,12 +9,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.okhttp.Request;
 import com.test.poweroptimizer.Battery.BatteryInfo;
 import com.test.poweroptimizer.Battery.BatteryStatsUtils;
 import com.test.poweroptimizer.Tools.WatchDogService;
@@ -145,12 +147,19 @@ public class MonitorFragment extends Fragment {
         mCycleCountTextView = (TextView) mRootView.findViewById(R.id.battery_info_charging_cycles);
         mStateOfHealthTextView = (TextView) mRootView.findViewById(R.id.battery_info_health);
 
-        mSerialNumberTextView.setVisibility(View.INVISIBLE);
-        mTemperatureTextView.setVisibility(View.INVISIBLE);
+        //mSerialNumberTextView.setVisibility(View.INVISIBLE);
+/*        mTemperatureTextView.setVisibility(View.INVISIBLE);
         mVoltageTextView.setVisibility(View.INVISIBLE);
         mInternalTemperatureTextView.setVisibility(View.INVISIBLE);
         mCycleCountTextView.setVisibility(View.INVISIBLE);
-        mStateOfHealthTextView.setVisibility(View.INVISIBLE);
+        mStateOfHealthTextView.setVisibility(View.INVISIBLE);*/
+
+        mSerialNumberTextView.setText("14");
+        mTemperatureTextView.setText("35");
+        mVoltageTextView.setText("24");
+        mInternalTemperatureTextView.setText("15");
+        mCycleCountTextView.setText("1");
+        mStateOfHealthTextView.setText("86");
 
         return mRootView;
     }
@@ -226,5 +235,22 @@ public class MonitorFragment extends Fragment {
                 mBatteryManager.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY);
 
         return energy;
+    }
+
+    public void getJsonData () {
+        OkHttpClientManager.getAsyn("https://www.baidu.com", new OkHttpClientManager.ResultCallback<String>()
+        {
+            @Override
+            public void onError(Request request, Exception e)
+            {
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(String u)
+            {
+                Log.d("ARQ", u);
+            }
+        });
     }
 }
