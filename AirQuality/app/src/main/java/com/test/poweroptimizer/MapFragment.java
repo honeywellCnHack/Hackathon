@@ -7,12 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.app.FragmentManager;
+import android.graphics.*;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.*;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
@@ -64,6 +65,17 @@ public class MapFragment extends Fragment  implements OnMapReadyCallback {
         MarkerOptions bad = new MarkerOptions().position(new LatLng(31.230117, 121.524717)).title("Bad");
         this.map.addMarker(bad);
         this.map.addMarker(new MarkerOptions().position(new LatLng(31.232906, 121.523526)).title("Good"));
+
+        Polyline line = map.addPolyline(new PolylineOptions()
+                .add(new LatLng(31.235041, 121.509421), new LatLng(31.230067, 121.524819))
+                .width(8)
+                .color(Color.RED));
+
+        Polyline line1 = map.addPolyline(new PolylineOptions()
+                .add(new LatLng(31.230067, 121.524819), new LatLng(31.222489, 121.537944))
+                .width(8)
+                .color(Color.GREEN));
+
         LatLng chLocation = new LatLng(31.232044, 121.518591);
         this.map.animateCamera(CameraUpdateFactory.newLatLngZoom(chLocation,14));
     }
