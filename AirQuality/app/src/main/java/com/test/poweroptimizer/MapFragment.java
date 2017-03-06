@@ -64,7 +64,18 @@ public class MapFragment extends Fragment  implements OnMapReadyCallback {
         this.map.addMarker(new MarkerOptions().position(new LatLng(31.232044, 121.518591)).title("Good"));
         MarkerOptions bad = new MarkerOptions().position(new LatLng(31.230117, 121.524717)).title("Bad");
         this.map.addMarker(bad);
-        this.map.addMarker(new MarkerOptions().position(new LatLng(31.232906, 121.523526)).title("Good"));
+        
+        this.map.addMarker(new MarkerOptions()
+                .position(new LatLng(31.240, 121.525)).title("Vending machine")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.m)));
+
+        this.map.addMarker(new MarkerOptions()
+                .position(new LatLng(31.22, 121.567)).title("Vending machine 2")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.m)));
+
+        this.map.addMarker(new MarkerOptions()
+                .position(new LatLng(31.22, 121.567)).title("Vending machine 3")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.m)));
 
         Polyline line = map.addPolyline(new PolylineOptions()
                 .add(new LatLng(31.235041, 121.509421), new LatLng(31.230067, 121.524819))
@@ -75,6 +86,7 @@ public class MapFragment extends Fragment  implements OnMapReadyCallback {
                 .add(new LatLng(31.230067, 121.524819), new LatLng(31.222489, 121.537944))
                 .width(8)
                 .color(Color.GREEN));
+
 
         LatLng chLocation = new LatLng(31.232044, 121.518591);
         this.map.animateCamera(CameraUpdateFactory.newLatLngZoom(chLocation,14));
