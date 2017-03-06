@@ -37,6 +37,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
                         android:contentDescription="@null"
                         android:elevation="100sp"
                         android:src="@drawable/air"></ImageView>
@@ -307,22 +308,6 @@
                         android:elevation="100sp"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="2dp"
-                            android:elevation="100sp"
-                            android:src="@drawable/ic_scan_on"></ImageView>
-
-                        <TextView
-                            android:id="@+id/idle_on_time"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="1"
-                            android:text="@string/power_remaining_scan"
-                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
 
                         <TextView
                             android:id="@+id/idle_on_time_value"
@@ -344,22 +329,6 @@
                         android:elevation="100sp"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="2dp"
-                            android:elevation="100sp"
-                            android:src="@drawable/ic_smartphone_on"></ImageView>
-
-                        <TextView
-                            android:id="@+id/screen_on_time"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="1"
-                            android:text="@string/power_remaining_screen"
-                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
 
                         <TextView
                             android:id="@+id/screen_on_time_value"
@@ -382,22 +351,7 @@
                         android:elevation="100sp"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="2dp"
-                            android:elevation="100sp"
-                            android:src="@drawable/ic_call_on"></ImageView>
 
-                        <TextView
-                            android:id="@+id/phone_on_time"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="1"
-                            android:text="@string/power_remaining_phone"
-                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
 
                         <TextView
                             android:id="@+id/power_on_time_value"
@@ -420,22 +374,9 @@
                         android:elevation="100sp"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="2dp"
-                            android:elevation="100sp"
-                            android:src="@drawable/ic_wifi_on"></ImageView>
 
-                        <TextView
-                            android:id="@+id/wifi_on_time"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="1"
-                            android:text="@string/power_remaining_wifi"
-                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
 
                         <TextView
                             android:id="@+id/wifi_on_time_value"

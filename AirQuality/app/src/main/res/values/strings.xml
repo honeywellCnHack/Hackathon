@@ -15,7 +15,7 @@
     <string name="battery_info">Air Quality:</string>
     <string name="battery_info_sn">PM2.5</string>
     <string name="battery_info_temperature">PM10</string>
-    <string name="battery_info_voltage">CO</string>
+    <string name="battery_info_voltage">NO2</string>
     <string name="battery_info_internal_temperature">SO2</string>
     <string name="battery_info_charging_cycles">CO</string>
     <string name="battery_info_state_of_health">O2</string>
