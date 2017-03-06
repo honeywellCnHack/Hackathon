@@ -5,10 +5,10 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diagnostic Fragment"
-        android:textSize="24sp" />
+    <RelativeLayout
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
 
 </LinearLayout>

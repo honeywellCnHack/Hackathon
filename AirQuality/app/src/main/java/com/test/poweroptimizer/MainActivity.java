@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTabHost mTabHost;
     private ViewPager mViewPager;
     private List<Fragment> mFragmentList;
-    private Class mClass[] = {MonitorFragment.class, DiagnosticFragment.class, ConfigureFragment.class, ToolsFragment.class};
-    private Fragment mFragment[] = {new MonitorFragment(), new DiagnosticFragment(), new ConfigureFragment(), new ToolsFragment()};
+    private Class mClass[] = {MonitorFragment.class, MapFragment.class, ConfigureFragment.class, ToolsFragment.class};
+    private Fragment mFragment[] = {new MonitorFragment(), new MapFragment(), new ConfigureFragment(), new ToolsFragment()};
     private String mTitles[] = {"Monitor", "Diagnostic", "Configure", "Tools"};
     private int mImages[] = {
             R.drawable.tab_home,
