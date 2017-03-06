@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Air Quality on Road</string>
+    <string name="action_about">About</string>
+    <string name="action_save">Save</string>
+    <string name="action_add_new_profile">Add new profile</string>
+    <string name="battery_level">Level:%4s</string>
+    <string name="battery_health">Health:%4s </string>
+
+    <string name="power_remaining">Power Remaining</string>
+    <string name="power_remaining_scan">Scan time:</string>
+    <string name="power_remaining_screen">Screen on:</string>
+    <string name="power_remaining_phone">Mobile data on:</string>
+    <string name="power_remaining_wifi">WiFi on:</string>
+
+    <string name="battery_info">Air Quality:</string>
+    <string name="battery_info_sn">PM2.5</string>
+    <string name="battery_info_temperature">PM10</string>
+    <string name="battery_info_voltage">CO</string>
+    <string name="battery_info_internal_temperature">SO2</string>
+    <string name="battery_info_charging_cycles">CO</string>
+    <string name="battery_info_state_of_health">O2</string>
+
+    <string name="battery_history_days">%1$dD %2$dH</string>
+    <string name="battery_history_hours">%1$dH %2$dM</string>
+    <string name="battery_history_minutes">%1$dM %2$dS</string>
+    <string name="battery_history_seconds">%1$dS</string>
+
+    <string name="about">About</string>
+    <string name="copyright_year">\@ 2017&#160;</string>
+    <string name="copyright">Honeywell International Inc. All rights reserved.</string>
+
+    <string name="profile_edit">Profile Edit</string>
+    <string name="profile_edit_name">Profile Name</string>
+    <string name="profile_edit_name_hint">Input a name</string>
+    <string name="profile_edit_package_choose">Choose a package</string>
+    <string name="profile_edit_package_choose_title">Target package</string>
+    <string name="profile_edit_backlight_level">Brightness level</string>
+    <string name="profile_edit_backlight_timeout">Backlight timeout</string>
+
+    <string name="smartbacklight_notification_add_profile">Tap to add new profile!</string>
+
+    <string name="dialog_profile_delete_prompt">Delete profile?</string>
+    <string name="dialog_profile_delete_title">Delete</string>
+</resources>

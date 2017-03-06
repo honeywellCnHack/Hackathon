@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="false"
+    android:title="@string/profile_edit">
+
+    <EditTextPreference
+        android:hint="@string/profile_edit_name_hint"
+        android:key="profile_name"
+        android:maxLength="10"
+        android:persistent="false"
+        android:summary="@string/profile_edit_name_hint"
+        android:title="@string/profile_edit_name"></EditTextPreference>
+
+    <!--<EditTextPreference
+        android:hint="@string/profile_edit_package_choose"
+        android:key="profile_package"
+        android:persistent="false"
+        android:summary="@string/profile_edit_name"
+        android:title="@string/profile_edit_name"></EditTextPreference> -->
+
+    <ListPreference
+        android:key="profile_package"
+        android:persistent="false"
+        android:summary="@string/profile_edit_package_choose"
+        android:title="@string/profile_edit_package_choose_title"></ListPreference>
+
+    <EditTextPreference
+        android:key="profile_level"
+        android:maxLength="5"
+        android:numeric="integer"
+        android:persistent="false"
+        android:summary="@string/profile_edit_backlight_level"
+        android:title="@string/profile_edit_backlight_level"></EditTextPreference>
+
+    <EditTextPreference
+        android:key="profile_timeout"
+        android:maxLength="5"
+        android:numeric="integer"
+        android:persistent="false"
+        android:summary="@string/profile_edit_backlight_timeout"
+        android:title="@string/profile_edit_backlight_timeout"></EditTextPreference>
+
+</PreferenceScreen>
